@@ -5,3 +5,20 @@ pip_dependencies:
   - lancedb
   - pyarrow
   - sentence-transformers
+config_fields:
+  - key: hf_endpoint
+    description: "HuggingFace 镜像站（如 https://hf-mirror.com）"
+    env_var: HF_ENDPOINT
+    secret: false
+  - key: hf_home
+    description: "本地模型缓存目录"
+    env_var: HF_HOME
+    secret: false
+  - key: hf_http_proxy
+    description: "HTTP 代理（如 http://192.168.1.188:63399）"
+    env_var: HF_HTTP_PROXY
+    secret: false
+  - key: hf_https_proxy
+    description: "HTTPS 代理"
+    env_var: HF_HTTPS_PROXY
+    secret: false
